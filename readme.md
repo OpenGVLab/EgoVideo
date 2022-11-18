@@ -24,3 +24,15 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 
 Zenodo: 
 coming soon.
+
+
+# Citation
+If this work is helpful for your research, please consider citing our techical report.
+```
+@inproceedings{Chen2022InternVideoEgo4DAP,
+  title={InternVideo-Ego4D: A Pack of Champion Solutions to Ego4D Challenges},
+  author={Guo Chen and Sen Xing and Zhe Chen and Yi Wang and Kunchang Li and Yizhuo Li and Yi Liu and Jiahao Wang and Yin-Dong Zheng and Bingkun Huang and Zhiyu Zhao and Junting Pan and Yifei Huang and Zun Wang and Jiashuo Yu and Yinan He and Hongjie Zhang and Tong Lu and Yali Wang and Limin Wang and Yu Qiao},
+  year={2022}
+}
+```
+
