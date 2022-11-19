@@ -1,6 +1,8 @@
 # ego4d-eccv2022-solutions
 It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 
+[Techical report](https://arxiv.org/abs/2211.09529)
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/state-change-object-detection-on-ego4d)](https://paperswithcode.com/sota/state-change-object-detection-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/moment-queries-on-ego4d)](https://paperswithcode.com/sota/moment-queries-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/short-term-object-interaction-anticipation-on)](https://paperswithcode.com/sota/short-term-object-interaction-anticipation-on?p=internvideo-ego4d-a-pack-of-champion)
