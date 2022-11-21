@@ -31,9 +31,10 @@ coming soon.
 # Citation
 If this work is helpful for your research, please consider citing our techical report.
 ```
-@inproceedings{Chen2022InternVideoEgo4DAP,
+@article{chen2022ego4d,
   title={InternVideo-Ego4D: A Pack of Champion Solutions to Ego4D Challenges},
-  author={Guo Chen and Sen Xing and Zhe Chen and Yi Wang and Kunchang Li and Yizhuo Li and Yi Liu and Jiahao Wang and Yin-Dong Zheng and Bingkun Huang and Zhiyu Zhao and Junting Pan and Yifei Huang and Zun Wang and Jiashuo Yu and Yinan He and Hongjie Zhang and Tong Lu and Yali Wang and Limin Wang and Yu Qiao},
+  author={Chen, Guo and Xing, Sen and Chen, Zhe and Wang, Yi and Li, Kunchang and Li, Yizhuo and Liu, Yi and Wang, Jiahao and Zheng, Yin-Dong and Huang, Bingkun and others},
+  journal={arXiv preprint arXiv:2211.09529},
   year={2022}
 }
 ```
