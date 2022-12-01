@@ -9,23 +9,49 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/future-hand-prediction-on-ego4d)](https://paperswithcode.com/sota/future-hand-prediction-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/natural-language-queries-on-ego4d)](https://paperswithcode.com/sota/natural-language-queries-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 
-
 ## News
+
+(2022/12/01) The VideoMAE features for MQ and NLQ are released.
+
 (2022/11/17) The repository is created.
+
+
 
 ## Catalog
 
-- [ ] Verb Noun Features (VideoMAE-L) for MQ and NLQ
+- [x] Verb Noun Features (VideoMAE-L) for MQ and NLQ
 - [ ] Codes for pretraining
 - [ ] Codes for STA
 - [ ] Guides for Hands
 - [ ] Codes for SCOD and Checkpoints
 
 
-## Video Features for Verb and Noun
 
-Zenodo: 
+## Video Features for MQ and NLQ.
+We provide the video features extracted by VideoMAE-L pretrained on verb and noun subset.
+
+
+
+|  Feature   | Baidu Netdisk | Zenodo |
+|  ----  | ----  |----  |
+| MQ(verb)  | [Download](https://pan.baidu.com/s/1yYRVJmSrUAjrI7EmbUoqPA). code: sxda|[Download](https://zenodo.org/record/7340838) |
+| NLQ(verb)  | [Download](https://pan.baidu.com/s/1Q3CHJyV1Onq8skH3xu6XLg). code: teod |[Download](https://zenodo.org/record/7343075)|
+| NLQ(noun)  | [Download](https://pan.baidu.com/s/1aspOwXDTMlzpOUkLiIrZFg). code: wrop |[Download](https://zenodo.org/record/7343178) |
+
+
+## Pretraining.
 coming soon.
+
+## STA.
+coming soon.
+
+## FHP
+coming soon.
+
+## SCOD
+coming soon.
+
+
 
 
 # Citation
