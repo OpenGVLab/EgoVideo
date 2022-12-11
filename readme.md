@@ -38,7 +38,7 @@ We provide the video features extracted by VideoMAE-L pretrained on verb and nou
 
 
 ## Pretraining.
-Our training strategy is based on the vanilla method and is easy to follow. We use [VideoMAE]() codebase for training and validation. Before training, you have to follow it to install the python environment. We split the training annotations filtered by [EgoVLP]() for rapid development. The second-filtered annotations files are available [here](). We release the checkpoints in the below table.
+Our training strategy is based on the vanilla method and is easy to follow. We use [VideoMAE](https://github.com/MCG-NJU/VideoMAE) codebase for training and validation. Before training, you have to follow it to install the python environment. We split the training annotations filtered by [EgoVLP](https://github.com/showlab/EgoVLP) for rapid development. The second-filtered annotations files are available [here](ego4d_annotations/pretrain). We release the checkpoints in the below table.
 
 |  Method   | Pretrain | Resolution |Subset |Top-1 |Top-5 |Weights |
 |  ----  | ----  |----  |  ----  | ----  |----  |----  |
@@ -48,7 +48,7 @@ Our training strategy is based on the vanilla method and is easy to follow. We u
 
 
 ### Training
-We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE]() repository to modify.
+We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE](https://github.com/MCG-NJU/VideoMAE) repository to modify.
 
 ```
 bash scripts/ego4d_verb_slurm_pretrain_vitl_k400.sh
@@ -64,7 +64,7 @@ coming soon.
 ## FHP
 ### Training
 We train the FHP task using Uniformer-B and the weights pretrained on Ego4D verb subset.
-We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE]() repository to modify.
+We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE](https://github.com/MCG-NJU/VideoMAE) repository to modify.
 
 ```
 bash scripts/ego4d_hands_uniformer.sh
