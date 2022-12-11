@@ -20,17 +20,15 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 ## Catalog
 
 - [x] Verb Noun Features (VideoMAE-L) for MQ and NLQ
-- [ ] Codes for pretraining
+- [x] Codes for pretraining
 - [ ] Codes for STA
-- [ ] Guides for Hands
+- [x] Codes for Hands
 - [ ] Codes for SCOD and Checkpoints
 
 
 
 ## Video Features for MQ and NLQ.
 We provide the video features extracted by VideoMAE-L pretrained on verb and noun subset.
-
-
 
 |  Feature   | Baidu Netdisk | Zenodo |
 |  ----  | ----  |----  |
@@ -40,13 +38,48 @@ We provide the video features extracted by VideoMAE-L pretrained on verb and nou
 
 
 ## Pretraining.
-coming soon.
+Our training strategy is based on the vanilla method and is easy to follow. We use [VideoMAE]() codebase for training and validation. Before training, you have to follow it to install the python environment. We split the training annotations filtered by [EgoVLP]() for rapid development. The second-filtered annotations files are available [here](). We release the checkpoints in the below table.
+
+|  Method   | Pretrain | Resolution |Subset |Top-1 |Top-5 |Weights |
+|  ----  | ----  |----  |  ----  | ----  |----  |----  |
+| VideoMAE-L  | K700| 224x224| verb | 52.51 | 86.05 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_verb_pretrain_vitl_k700.pt) | 
+| VideoMAE-L  | K700|224x224 |noun |33.41 | 85.51 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_noun_pretrain_vitl_k700.pt) | 
+| Uniformer-B | K600|320x320 |verb |49.30 | 83.61 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_verb_uniformer_base_16x320_k600_ep9.pt) | 
+
+
+### Training
+We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE]() repository to modify.
+
+```
+bash scripts/ego4d_verb_slurm_pretrain_vitl_k400.sh
+```
+
+In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
+
+
 
 ## STA.
 coming soon.
 
 ## FHP
-coming soon.
+### Training
+We train the FHP task using Uniformer-B and the weights pretrained on Ego4D verb subset.
+We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE]() repository to modify.
+
+```
+bash scripts/ego4d_hands_uniformer.sh
+```
+
+In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
+
+### Validation
+We also provide the script for validation and testing. You can launch the script below to validate a specific checkpoint's performance.
+
+```
+bash scripts/ego4d_hands_uniformer_val.sh
+```
+
+In the script, you need to set the approaiate `OUTPUT_DIR`, `MODEL_PATH`, `--test_subset` and `--test_num_segment`.
 
 ## SCOD
 coming soon.
