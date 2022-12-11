@@ -53,7 +53,7 @@ Our training strategy is based on the vanilla method and is easy to follow. We u
 We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE](https://github.com/MCG-NJU/VideoMAE) repository to modify.
 
 ```
-bash scripts/ego4d_verb_slurm_pretrain_vitl_k400.sh
+bash scripts/slurm/ego4d_verb_slurm_pretrain_vitl_k400.sh
 ```
 
 In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
@@ -69,7 +69,7 @@ We train the FHP task using Uniformer-B and the weights pretrained on Ego4D verb
 We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE](https://github.com/MCG-NJU/VideoMAE) repository to modify.
 
 ```
-bash scripts/ego4d_hands_uniformer.sh
+bash scripts/slurm/ego4d_hands_uniformer.sh
 ```
 
 In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
@@ -78,7 +78,7 @@ In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
 We also provide the script for validation and testing. You can launch the script below to validate a specific checkpoint's performance.
 
 ```
-bash scripts/ego4d_hands_uniformer_val.sh
+bash scripts/slurm/ego4d_hands_uniformer_val.sh
 ```
 
 In the script, you need to set the approaiate `OUTPUT_DIR`, `MODEL_PATH`, `--test_subset` and `--test_num_segment`.
