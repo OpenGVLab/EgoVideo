@@ -9,7 +9,7 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/future-hand-prediction-on-ego4d)](https://paperswithcode.com/sota/future-hand-prediction-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/natural-language-queries-on-ego4d)](https://paperswithcode.com/sota/natural-language-queries-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 
-## News
+## 📢News
 
 (2022/12/11) 🚀🚀We release code and checkpoints of pretraining, FHP task and SCOD task.
 
@@ -125,7 +125,7 @@ It should give:
 
 
 
-# Citation
+# 🎓Citation
 If this work is helpful for your research, please consider citing our techical report.
 ```
 @article{chen2022ego4d,
