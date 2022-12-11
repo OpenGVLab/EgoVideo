@@ -11,9 +11,9 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 
 ## News
 
-(2022/12/11) We release code and checkpoints of pretraining, FHP task and SCOD task.
+(2022/12/11) 🚀🚀We release code and checkpoints of pretraining, FHP task and SCOD task.
 
-(2022/12/01) The VideoMAE features for MQ and NLQ are released.
+(2022/12/01) 🚀The VideoMAE features for MQ and NLQ are released.
 
 (2022/11/17) The repository is created.
 
