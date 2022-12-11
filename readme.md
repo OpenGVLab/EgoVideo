@@ -36,7 +36,7 @@ We provide the video features extracted by VideoMAE-L pretrained on verb and nou
 | NLQ(verb)  | [Download](https://pan.baidu.com/s/1Q3CHJyV1Onq8skH3xu6XLg). code: teod |[Download](https://zenodo.org/record/7343075)|
 | NLQ(noun)  | [Download](https://pan.baidu.com/s/1aspOwXDTMlzpOUkLiIrZFg). code: wrop |[Download](https://zenodo.org/record/7343178) |
 
-You can check more details in our [techical report](https://arxiv.org/abs/2211.09529)
+You can check more details in our [techical report](https://arxiv.org/abs/2211.09529).
 
 
 ## Pretraining.
