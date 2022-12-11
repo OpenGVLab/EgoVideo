@@ -40,7 +40,7 @@ You can check more details in our [techical report](https://arxiv.org/abs/2211.0
 
 
 ## Pretraining.
-Our training strategy is based on the vanilla method and is easy to follow. We use [VideoMAE](https://github.com/MCG-NJU/VideoMAE) codebase for training and validation. Before training, you have to follow it to install the python environment. We split the training annotations filtered by [EgoVLP](https://github.com/showlab/EgoVLP) for rapid development. The second-filtered annotations files are available [here](ego4d_annotations/pretrain). We release the checkpoints in the below table.
+Our training strategy is based on the vanilla method and is easy to follow. We use [VideoMAE](https://github.com/MCG-NJU/VideoMAE) codebase for training and validation. Before training, you have to follow it to install the python environment. We split the training annotations filtered by [EgoVLP](https://github.com/showlab/EgoVLP) for rapid development. The second-filtered annotations files are available [here](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/tag/1.0.0). We release the checkpoints in the below table.
 
 |  Method   | Pretrain | Resolution |Subset |Top-1 |Top-5 |Weights |
 |  ----  | ----  |----  |  ----  | ----  |----  |----  |
