@@ -15,7 +15,7 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 
 (2022/12/01) 🚀The VideoMAE features for MQ and NLQ are released.
 
-(2022/11/17) The repository is created.
+(2022/11/17) 🔄The repository is created.
 
 
 
