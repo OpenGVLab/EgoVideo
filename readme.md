@@ -67,7 +67,7 @@ coming soon.
 
 ## FHP
 ### Training
-We train the FHP task using Uniformer-B and the weights pretrained on Ego4D verb subset.
+We train the FHP task using [Uniformer-B](https://github.com/Sense-X/UniFormer) and the weights pretrained on Ego4D verb subset.
 We provide the training script on SLURM mode. If you want to use PyTorch-DDP mode, you can infer to the introduction of the [VideoMAE](https://github.com/MCG-NJU/VideoMAE) repository to modify.
 
 ```
