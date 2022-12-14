@@ -1,0 +1,4 @@
+uid,version,filename
+792000be-d946-43cb-8bda-e8f8bcbbc154,QOce4ClLat8yYhBvkKcImeBgZjNKK2RK,object_detections.json
+45297f45-c1c0-48a0-b689-0ed698e99512,4LfpG4BHvf0uVQtLRhKu63ls7Ymb4U5a,object_detector.pth
+2b341325-9ecb-4565-aaef-38df02af8abd,KM8dTPvO6KTMpqYeAZ.q9Gk5ZzW6q6JR,slowfast_model.ckpt

@@ -1,0 +1,4 @@
+video_uid,type,canonical_s3_location
+792000be-d946-43cb-8bda-e8f8bcbbc154,file,s3://ego4d-consortium-sharing/public/v1/sta_models/object_detections.json
+45297f45-c1c0-48a0-b689-0ed698e99512,file,s3://ego4d-consortium-sharing/public/v1/sta_models/object_detector.pth
+2b341325-9ecb-4565-aaef-38df02af8abd,file,s3://ego4d-consortium-sharing/public/v1/sta_models/slowfast_model.ckpt

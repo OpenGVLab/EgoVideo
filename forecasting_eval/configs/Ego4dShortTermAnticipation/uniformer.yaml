@@ -1,0 +1,79 @@
+TRAIN:
+  ENABLE: True
+  DATASET: Ego4dShortTermAnticipation
+  BATCH_SIZE: 4
+CHECKPOINT_FILE_PATH: /mnt/petrelfs/share_data/chenguo/ego_forecasting/pretrained_models/uniformer_b_16_320.pt
+CHECKPOINT_VERSION: pytorch
+DATA:
+  NUM_FRAMES: 16
+  SAMPLING_RATE: 2
+  TRAIN_JITTER_SCALES: [320, 480]
+  TRAIN_CROP_SIZE: 320
+  TEST_CROP_SIZE: 320
+  INPUT_CHANNEL_NUM: [3]
+  TASK: short_term_anticipation
+  TARGET_FPS: 30
+DETECTION:
+  ALIGNED: True
+  SPATIAL_SCALE_FACTOR: 32 
+SLOWFAST:
+  ALPHA: 4
+  BETA_INV: 8
+  FUSION_CONV_CHANNEL_RATIO: 2
+  FUSION_KERNEL_SZ: 7
+RESNET:
+  ZERO_INIT_FINAL_BN: True
+  WIDTH_PER_GROUP: 64
+  NUM_GROUPS: 1
+  DEPTH: 50
+  TRANS_FUNC: bottleneck_transform
+  STRIDE_1X1: False
+  NUM_BLOCK_TEMP_KERNEL: [[3, 3], [4, 4], [6, 6], [3, 3]]
+  SPATIAL_DILATIONS: [[1, 1], [1, 1], [1, 1], [2, 2]]
+  SPATIAL_STRIDES: [[1, 1], [2, 2], [2, 2], [1, 1]]
+
+NONLOCAL:
+  LOCATION: [[[], []], [[], []], [[], []], [[], []]]
+  GROUP: [[1, 1], [1, 1], [1, 1], [1, 1]]
+  INSTANTIATION: dot_product
+  POOL: [[[1, 2, 2], [1, 2, 2]], [[1, 2, 2], [1, 2, 2]], [[1, 2, 2], [1, 2, 2]], [[1, 2, 2], [1, 2, 2]]]
+BN:
+  USE_PRECISE_STATS: False
+  NUM_BATCHES_PRECISE: 200
+  MOMENTUM: 0.1
+  WEIGHT_DECAY: 0.0
+SOLVER:
+  BASE_LR: 3.125e-5
+  LR_POLICY: cosine_warmup
+  MAX_EPOCH: 30
+  MOMENTUM: 0.9
+  OPTIMIZING_METHOD: adamw
+  WEIGHT_DECAY: 0.05
+  WARMUP_STEPS: 5
+MODEL:
+  NUM_VERBS: 74
+  NUM_NOUNS: 87
+  ARCH: vit
+  MODEL_NAME: uniformer_base_320_ego4d
+  VERB_LOSS_FUNC: cross_entropy
+  TTC_LOSS_FUNC: smooth_l1
+  STA_LOSS_WEIGHTS: [1, 15] #verb, TTC
+  DROPOUT_RATE: 0.0
+  HEAD_VERB_ACT: softmax
+  HEAD_TTC_ACT: softplus
+TEST:
+  ENABLE: True
+  DATASET: Ego4dShortTermAnticipation
+  BATCH_SIZE: 8
+DATA_LOADER:
+  NUM_WORKERS: 6
+  PIN_MEMORY: True
+EGO4D_STA:
+  ANNOTATION_DIR: /mnt/cache/xingsen/ego4d/annotations
+  RGB_LMDB_DIR: /mnt/petrelfs/share_data/chenguo/ego_forecasting/short_term_anticipation/data/lmdb/
+  OBJ_DETECTIONS: ego4d/box_file/object_detections.json
+  PROPOSAL_APPEND_GT: True
+NUM_GPUS: 8
+NUM_SHARDS: 1
+RNG_SEED: 0
+OUTPUT_DIR: /mnt/cache/xingsen/ego4d/short_term_anticipation/models/slowfast_model/
