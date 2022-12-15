@@ -63,7 +63,11 @@ In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
 
 
 ## STA.
-coming soon.
+Training
+We use the ViT-Large model to train the STA task.
+```bash
+sh scripts/slurm/sta_train.sh
+```
 
 ## FHP
 ### Training
