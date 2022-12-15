@@ -63,10 +63,16 @@ In the script, you need to set the approaiate `OUTPUT_DIR` and `MODEL_PATH`.
 
 
 ## STA.
-Training
+### Training
 We use the ViT-Large model to train the STA task.
 ```bash
 sh scripts/slurm/sta_train.sh
+```
+
+### Validation
+```bash
+cd forecasting_eval
+sh sta_val.sh
 ```
 
 ## FHP
@@ -139,4 +145,3 @@ If this work is helpful for your research, please consider citing our techical r
   year={2022}
 }
 ```
-

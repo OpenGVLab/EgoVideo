@@ -6,14 +6,17 @@ export PATH=/mnt/cache/share/cuda-11.3/bin:$PATH
 export PATH=/mnt/cache/xingsen/.local/bin:$PATH
 export LD_LIBRARY_PATH=/mnt/cache/share/cuda-11.3/lib64:$LD_LIBRARY_PATH
 rm -rf /mnt/lustre/xingsen/.cache/torch_extensions
+# DATA_PATH does not need to be modified
 DATA_PATH='YOUR_PATH/list_kinetics-400'
+
+# The following three parameters need to be replaced with your directory
 MODEL_PATH='/mnt/petrelfs/share_data/chenguo/ego_forecasting/pretrained_models/vitl_v_f.pt'
 OUTPUT_DIR='/mnt/petrelfs/xingsen/videoMAE_ckp/chenguo_inference_verb_test'
 CONFIG_FILE='/mnt/cache/xingsen/videoMAE_kinetics/VideoMAE_ava/short_term_config/VIT3D.yaml'
-PARTITION=${PARTITION:-"video"}
-GPUS=${GPUS:-2}
-GPUS_PER_NODE=${GPUS_PER_NODE:-2}
-CPUS_PER_TASK=${CPUS_PER_TASK:-14}
+PARTITION=${PARTITION:-"PARTITION"}
+GPUS=${GPUS:-8}
+GPUS_PER_NODE=${GPUS_PER_NODE:-8}
+CPUS_PER_TASK=${CPUS_PER_TASK:-16}
 SRUN_ARGS=${SRUN_ARGS:-""}
 PY_ARGS=${@:2}
 srun -p video \
