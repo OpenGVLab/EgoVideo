@@ -135,16 +135,6 @@ It should give:
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.697
 ```
 
-# 🎓More ducuments
-If this work is helpful for your research, please consider citing our techical report.
-```
-@article{chen2022ego4d,
-  title={InternVideo-Ego4D: A Pack of Champion Solutions to Ego4D Challenges},
-  author={Chen, Guo and Xing, Sen and Chen, Zhe and Wang, Yi and Li, Kunchang and Li, Yizhuo and Liu, Yi and Wang, Jiahao and Zheng, Yin-Dong and Huang, Bingkun and others},
-  journal={arXiv preprint arXiv:2211.09529},
-  year={2022}
-}
-```
 
 # 🎓Citation
 If this work is helpful for your research, please consider citing our techical report.
