@@ -4,7 +4,7 @@ from transforms import *
 from masking_generator import TubeMaskingGenerator
 from kinetics import VideoClsDataset, VideoMAE
 
-from ego4d import Ego4dVerbNounClsDataset
+from ego4d_cls import Ego4dVerbNounClsDataset
 from ego4d_hands import Ego4dHandsDataset
 
 from forecasting_eval.ego4d.datasets.short_term_anticipation import Ego4dShortTermAnticipation

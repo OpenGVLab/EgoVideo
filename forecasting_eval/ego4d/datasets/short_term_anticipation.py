@@ -1,9 +1,6 @@
 from hashlib import new
 import io
 import os
-# from petrel_client.client import Client
-import sys
-sys.path.append('/mnt/cache/xingsen/ego4d/')
 import time
 from os.path import join
 from pytorchvideo.data.encoded_video import EncodedVideo
@@ -15,8 +12,6 @@ from tqdm import tqdm
 import json
 from pathlib import Path
 from ego4d.evaluation.sta_metrics import compute_iou
-# from petrel_client.client import Client
-from ego4d.datasets.build import DATASET_REGISTRY
 import cv2
 import torch
 from decord import VideoReader

@@ -1,6 +1,8 @@
 import argparse
 import datetime
 from posixpath import split
+import sys
+sys.path.append('forecasting_eval/')
 import numpy as np
 import time
 import torch
@@ -18,7 +20,7 @@ from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 from timm.utils import ModelEma
 from optim_factory import create_optimizer, get_parameter_groups, LayerDecayValueAssigner
 
-from ego4d_datasets import build_short_term_dataset
+from datasets import build_short_term_dataset
 from engine_for_finetuning_ego4d_sta import train_one_epoch
 from utils import NativeScalerWithGradNormCount as NativeScaler
 from forecasting_eval.ego4d.datasets.loader import get_collate
