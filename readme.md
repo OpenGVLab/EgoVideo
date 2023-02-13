@@ -23,9 +23,10 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 
 ## Catalog
 
+- [] Codes for Feature Extractor
 - [x] Verb Noun Features (VideoMAE-L) for MQ and NLQ
 - [x] Codes for pretraining
-- [ ] Codes for STA
+- [x] Codes for STA
 - [x] Codes for Hands
 - [x] Codes and checkpoints for SCOD
 
