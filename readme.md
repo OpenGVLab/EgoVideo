@@ -102,6 +102,8 @@ In the script, you need to set the approaiate `OUTPUT_DIR`, `MODEL_PATH`, `--tes
 
 Our detection code for SCOD is developed on top of [MMDetection](./scod).
 
+Download: the converted annotations for SCOD: [download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/scod_annotations.zip)
+
 We report the performance on the validation set and release the checkpoint in the below table.
 
 |  Method   | Pretrain | Resolution |AP | AP50 |AP75 | Config | Download | 
