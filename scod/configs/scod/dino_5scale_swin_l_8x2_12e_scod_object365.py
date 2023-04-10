@@ -2,7 +2,7 @@ _base_ = [
     '../_base_/datasets/ego4d_scod_detection.py',
     '../_base_/default_runtime.py'
 ]
-# load_from = 'path/to/dino_5scale_swin_l_o365.pth'
+load_from = 'https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/dino_5scale_swin_l_8x2_12e_object365.pth'
 model = dict(
     type='DINO',
     backbone=dict(
