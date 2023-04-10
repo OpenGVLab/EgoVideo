@@ -107,6 +107,8 @@ We report the performance on the validation set and release the checkpoint in th
 |  Method   | Pretrain | Resolution |AP | AP50 |AP75 | Config | Download | 
 |  ----  | ----  | ----  |  ----  | ----  | ----  | ----  | ---- |
 | UniFormer-L | [IN-1K](https://drive.google.com/file/d/174rcA6rNzYVG9Ya9ik-NwTGoxW1M79ez/view?usp=sharing) | 800-1600/2000 |24.8 |44.2 | 24.0 | [config](scod/configs/scod/dino_5scale_uniformer-l_8x2_12e_scod_imagenet1k.py) |[ckpt](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/dino_5scale_uniformer-l_8x2_12e_scod_imagenet1k.pth) \| [log](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/dino_5scale_uniformer-l_8x2_12e_scod_imagenet1k.txt) | 
+| Swin-L | IN-22K+O365 | 800-1600/2000 |36.4 | 56.5 | 37.6 | [config](scod/configs/scod/dino_5scale_swin_l_8x2_12e_scod_object365.py) |[ckpt](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/dino_5scale_swin_l_8x2_12e_scod_object365.pth) \| [log](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/dino_5scale_swin_l_8x2_12e_scod_object365.txt) | 
+
 
 To train UniFormer-L + DINO on the SCOD training set with 8 gpus for 12 epochs:
 
