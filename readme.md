@@ -12,6 +12,7 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/natural-language-queries-on-ego4d)](https://paperswithcode.com/sota/natural-language-queries-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 
 ## 📢News
+(2023/07/13) We release the ViT-L weights finetuned on Ego4D-MQ dataset.
 
 (2023/04/11) 🚀We release the leading model of SCOD task.
 
@@ -51,9 +52,12 @@ Our training strategy is based on the vanilla method and is easy to follow. We u
 
 |  Method   | Pretrain | Resolution |Subset |Top-1 |Top-5 |Weights |
 |  ----  | ----  | ----  |  ----  | ----  | ----  | ----  |
-| VideoMAE-L  | K700| 224x224| verb | 52.51 | 86.05 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_verb_pretrain_vitl_k700.pt) | 
-| VideoMAE-L  | K700|224x224 |noun |33.41 | 85.51 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_noun_pretrain_vitl_k700.pt) | 
+| ViT-L  | K700| 224x224| verb | 52.51 | 86.05 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_verb_pretrain_vitl_k700.pt) | 
+| ViT-L  | K700|224x224 |noun |33.41 | 85.51 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_noun_pretrain_vitl_k700.pt) | 
+| ViT-L  | K700+verb | 224x224 | MQ | - | - | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/vitl_mq.pt) | 
 | UniFormer-B | K600|320x320 |verb |49.30 | 83.61 | [Download](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/releases/download/1.0.0/ego4d_verb_uniformer_base_16x320_k600_ep9.pt) | 
+
+**Note:** For the ViT-L weight finetuned on MQ tasks, some keys of state_dict may need to modify to adapt the model code.
 
 
 ### Training
