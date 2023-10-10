@@ -12,6 +12,8 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/natural-language-queries-on-ego4d)](https://paperswithcode.com/sota/natural-language-queries-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 
 ## 📢News
+(2023/10/10) We use the weights pre-trained on the **verb** subset for TAL of [Perception Test](https://github.com/google-deepmind/perception_test/tree/main) task and bring 2 points of performance improvement. The extracted features can be download at [here](https://github.com/OpenGVLab/perception_test_iccv2023).
+
 (2023/07/13) We release the ViT-L weights finetuned on Ego4D-MQ dataset.
 
 (2023/04/11) 🚀We release the leading model of SCOD task.
