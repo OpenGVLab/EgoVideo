@@ -4,6 +4,7 @@ It is our solutions repository for Ego4D challenges in ECCV2022 workshop.
 [Techical report](https://arxiv.org/abs/2211.09529)
 
 [Ego4D Slides (in Chinese)](https://github.com/OpenGVLab/ego4d-eccv2022-solutions/blob/main/assets/VideoIntern_Ego4D.pdf)
+[Ego4D Solutions (in Chinese)](https://zhuanlan.zhihu.com/p/621374285)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/state-change-object-detection-on-ego4d)](https://paperswithcode.com/sota/state-change-object-detection-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/internvideo-ego4d-a-pack-of-champion/moment-queries-on-ego4d)](https://paperswithcode.com/sota/moment-queries-on-ego4d?p=internvideo-ego4d-a-pack-of-champion)
