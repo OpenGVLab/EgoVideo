@@ -27,7 +27,10 @@ We provide the pretrained EgoVideo Backbone model and feature extraction script.
 |  :----:  | :----:  | :----: | :----: |
 | EgoVideo-4frames  | [Download](https://drive.google.com/file/d/1k6f1eRdcL17IvXtdX_J8WxNbju2Ms3AW/view?usp=sharing)| 45.9 | 38.6 |
 
-You can check more details in the [subdirectory](./backbone).
+You can check more details in the [backbone folder](./backbone).
+
+## Downstream adaptation towards different tasks
+We will gradually update the code and models for downstream adaptation on different tasks using our EgoVideo backbone.
 
 
 # 🎓Citation
