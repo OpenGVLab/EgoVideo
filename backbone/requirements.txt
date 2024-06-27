@@ -1,0 +1,15 @@
+easydict==1.9
+einops==0.6.0
+func-timeout==4.3.5
+ipdb==0.13.11
+nltk==3.8.1
+numpy==1.23.1
+omegaconf==2.2.3
+opencv-python==4.5.4.58
+pandas==1.5.3
+flash-attention==2.5.6
+scikit-learn==1.2.2
+timm==0.5.4
+torch==1.13.1
+torchvision==0.14.1
+transformers==4.29.0

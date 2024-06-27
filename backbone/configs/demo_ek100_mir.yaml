@@ -1,0 +1,17 @@
+num_frames: 4
+ckpt_path: ckpt_4frames.pth
+ek100_mir:
+  root: your_path_to_video
+  metapath: ek100_annotation_path
+  metadata: ek100_annotation_path/EPIC_100_retrieval_test.csv
+  relevancy_path: your_path/caption_relevancy_EPIC_100_retrieval_test.pkl
+  video_chunk_len: -1
+  fps: -1
+
+  clip_length: 4
+  clip_stride: 16
+  num_clips: 1
+  num_crops: 1
+  sparse_sample: false
+  decode_threads: 1
+  fused_decode_crop: true
