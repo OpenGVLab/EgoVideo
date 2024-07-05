@@ -3,13 +3,3 @@ batch*
 *.out
 */__pycache__/
 __pycache__/
-forecasting_eval/pretrained_models/
-forecasting_eval/*/*.pth
-forecasting_eval/*/*.ckpt
-forecasting_eval/*/object_detections.json
-forecasting_eval/short_term_anticipation/models/object_detector/*.pth
-forecasting_eval/short_term_anticipation/models/object_detector/inference/*.pth
-forecasting_eval/short_term_anticipation/models/object_detector/last_checkpoint
-forecasting_eval/short_term_anticipation/data/object_detector.pth
-forecasting_eval/short_term_anticipation/data/slowfast_model.ckpt
-forecasting_eval/short_term_anticipation/data/object_detections.json
