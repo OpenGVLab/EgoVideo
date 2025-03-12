@@ -4,6 +4,8 @@ Champion Solutions repository for EgoVis challenges in CVPR2024 workshop.
 [Techical report](https://arxiv.org/abs/2406.18070)
 
 ## 📢News
+(2025/03) 🚀Please view the latest work of our EgoVideo Backbone model, and the refined data HOD we used for the champion solutions, in our new repository of ICLR 2025 [here](https://github.com/OpenRobotLab/EgoHOD)
+
 (2022/06/27) 🚀We release the EgoVideo Backbone model and the feature extraction script.
 
 (2024/06/25) 🔄The repository is created.
